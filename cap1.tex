@@ -1,0 +1,39 @@
+\documentclass[10pt,a4paper,oneside]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[portuguese]{babel}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+
+\setlength{\parindent}{0cm} 
+\begin{document}
+Um programa linear (LP) é um problema de otimização em que a função objetivo é linear e as restrições consistem em igualdades ou desigualdades lineares. A forma exata dessas restrições pode diferir de um problema para outro, mas, como mostrado abaixo, qualquer programa linear pode ser transformado na seguinte \textbf{forma padrão}:\\
+
+$\begin{array}{rlcl}
+min & c_{1}x_{1} + c_{2}x_{2} + ... +  c_{n}x_{n}\\
+sjt & a_{11}x_{1} + a_{12}x_{2} + ... +  a_{1n}x_{n} & = & b_{1}\\
+	& a_{21}x_{1} + a_{22}x_{2} + ... +  a_{2n}x_{n} & = & b_{2}\\
+	& .                                              &   & .    \\
+	& .                                              &   & .    \\
+	& .                                              &   & .    \\
+	& a_{m1}x_{1} + a_{m2}x_{2} + ... +  a_{mn}x_{n} & = & b_{m}\\
+e   & x_{1} \geq 0, x_{2} \geq 0, ..., x_{n} \geq 0,
+\end{array}$ \\
+
+Onde $c_{1}x_{1} + c_{2}x_{2} + ... +  c_{n}x_{n}$ é a função objetivo(ou função critério). Os coeficientes $c_{1},\;c_{2},\;...,\;c_{n}$ são chamados de coeficientes de custo e $x_{1},\;x_{2},\;...,\;x_{n}$ são as variáveis de decisão a serem determinadas.
+$b_{i},\; c_{i} \; e\; a_{ij}$ são constantes reais.
+
+Em uma notação vetorial mais compacta, este problema padrão se torna\\
+
+$\begin{array}{rlcl}
+min & \textbf{c}^{t}\textbf{x}\\
+sjt & \textbf{Ax} = \textbf{b}\\
+e   & \textbf{x} \geq 0,
+\end{array}$\\
+
+Onde $\textbf{x}$ é um vetor coluna n-dimensional, $\textbf{c}^{T}$ é um vetor linha n-dimensional, \textbf{A} é uma matriz $m \times n$ e \textbf{b} é um vetor coluna m-dimensional. A inequação linear $\textbf{x} \geq \textbf{0}$ significa que cada componente é não negativa.
+
+Um conjunto de valores $x_{1},\;x_{2},\;...,\;x_{n}$ que satisfazem todas as restrições é chamado de ponto viável ou uma solução viável. O conjunto de todos esses pontos constitui a região viável ou o espaço viável.
+
+\end{document}
